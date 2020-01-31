@@ -6,11 +6,7 @@ html {
     padding: 0;
     font-size: 62.5%;
     box-sizing: border-box;
-    font-family: "Josefin Sans", sans-serif;
-    /* @include desktop {
-      font-size: 70%;
-    } */
-  }
-  body {
-    background-color: color(black);
-  }
+}
+body {
+    background-color: color(#1B1B1B);
+}

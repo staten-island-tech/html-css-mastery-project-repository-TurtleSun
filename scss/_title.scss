@@ -4,14 +4,10 @@
     height: 100vh;
   
     // background-color: rgba(color(primary), 1);
-    background-image:/*  linear-gradient(
-        to right bottom,
-        rgba(color(primary), 0.5),
-        rgba(color(primary-light), 0.5)
-      ), */
-      url(../dist/media/Fukuoka.jpg);
+    background-image: url("fuku.jpg");
     background-position: top;
-    //background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
   
   .text-box {
       position: absolute;
@@ -41,6 +37,12 @@
         text-align: center;
         margin: 0 auto;
         font-family: 'Neuton', serif;
+
+      .csstransforms heading-primary {
+          border-left: 34px solid #369;
+          padding-left: 10px;
+      }
+
         @include tablet {
           font-size: 6rem;
           letter-spacing: 1.8rem;
@@ -60,7 +62,6 @@
         padding: 5px 10px;
         line-height: 24px;
         font-family: 'Sawarabi Mincho', sans-serif;
-
         @include laptop {
           font-size: 3rem;
         }
@@ -68,22 +69,3 @@
   }
 }
   
-   /* Class name via Modernizr */
-.csstransforms heading-primary {
-    border-left: 34px solid #369;
-    padding-left: 10px;
-}
-
-.csstransforms heading-sub {
-    /* Abs positioning makes it not take up vert space */
-    position: absolute;
-    top: 0;
-    left: 0;
-  
-    /* Border is the new background */
-    background: none;
-  
-    /* Rotate from top left corner (not default) */
-    transform-origin: 0 0;
-    transform: rotate(135deg);
-}
