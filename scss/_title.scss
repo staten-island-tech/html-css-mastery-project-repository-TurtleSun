@@ -38,11 +38,6 @@
         margin: 0 auto;
         font-family: 'Neuton', serif;
 
-      .csstransforms heading-primary {
-          border-left: 34px solid #369;
-          padding-left: 10px;
-      }
-
         @include tablet {
           font-size: 6rem;
           letter-spacing: 1.8rem;

@@ -48,11 +48,6 @@
   font-family: 'Neuton', serif;
 }
 
-.header .heading-primary .heading-main .csstransforms heading-primary {
-  border-left: 34px solid #369;
-  padding-left: 10px;
-}
-
 @media (min-width: 600px) {
   .header .heading-primary .heading-main {
     font-size: 6rem;
