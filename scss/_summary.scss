@@ -12,5 +12,17 @@
 
             /* Rotate from top left corner (not default) */
           @include transform-origin(0 0);
-          @include transform(rotate(135deg));
-  
+@include transform(rotate(135deg));
+
+.summary{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: auto;
+  background-color: color(#1B1B1B);
+}
+
+
+.summary-subtext{
+  font-size: large;
+}
