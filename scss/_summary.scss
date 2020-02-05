@@ -1,17 +1,17 @@
           /* Abs positioning makes it not take up vert space */
-          position: absolute;
-          top: 0;
-          left: 0;
+position: absolute;
+top: 0;
+left: 0;
           
             /* Border is the new background */
-          background: none;
+background: none;
           
-          .rotate{
-              transform: rotate(90deg);
-          }
+.rotate{
+  transform: rotate(90deg);
+}
 
             /* Rotate from top left corner (not default) */
-          @include transform-origin(0 0);
+@include transform-origin(0 0);
 @include transform(rotate(135deg));
 
 .summary{
