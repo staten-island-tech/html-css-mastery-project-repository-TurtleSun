@@ -1,20 +1,19 @@
 .transport {
-  $border-color: rgba(teal, 1);
+  $border-color: rgba(color(primary-dark), 1.0);
   width: 300px;
   min-height: 250px;
   position: relative;
   border: 2px solid $border-color;
   border-left: 40px solid $border-color;
   padding: 15px;
-  color: rgba(black, 0.5);
-  font-size: small;
+  font-size: 5px;
   display: inline-block;
   
   #T-head {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 3px;
-    
+    color: rgba(black, 0.5);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -27,22 +26,21 @@
 }
 
 .food {
-  $border-color: rgba(teal, 1);
+  $border-color: rgba(color(f-brown), 1.0);
   width: 300px;
   min-height: 250px;
   position: relative;
   border: 2px solid $border-color;
   border-left: 40px solid $border-color;
   padding: 15px;
-  color: rgba(black, 0.5);
-  font-size: small;
+  font-size: 5px;
   display: inline-block;
   
   #Fo-head {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 3px;
-    
+    color: rgba(black, 0.5);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -62,7 +60,6 @@
   border: 2px solid $border-color;
   border-left: 40px solid $border-color;
   padding: 15px;
-  color: rgba(white, .5);
   font-size: 5px;
   display: inline-block;
   
@@ -70,7 +67,7 @@
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 3px;
-    
+    color: rgba(black, 0.5);
     position: absolute;
     bottom: 0;
     left: 0;
