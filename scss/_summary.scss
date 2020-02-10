@@ -186,20 +186,17 @@
       width: auto;
       position: absolute;
       outline-offset: .5rem;
+      .ramen{
+        top: 2rem;
+        left: 4rem;
+      }
+      .air{
+        top: 20rem;
+        right: -6rem;
+      }
+      .park{
+        top: 38rem;
+        right: -27rem;
+      }
     }
-}
-
-@include tablet{
-  .ramen{
-    top: 2rem;
-    left: 4rem;
-  }
-  .air{
-    top: 20rem;
-    right: -6rem;
-  }
-  .park{
-    bottom: 5.4rem;
-    right: -27rem;
-  }
 }
