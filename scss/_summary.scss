@@ -1,23 +1,26 @@
+@import "./variables";
+
 .transport {
   $border-color: rgba(color(primary-dark), 1.0);
-  width: 300px;
-  min-height: 250px;
+  width: 90px;
+  min-height: 75px;
   position: relative;
   border: 2px solid $border-color;
-  border-left: 40px solid $border-color;
-  padding: 15px;
-  font-size: 5px;
+  border-left: 20px solid $border-color;
+  padding: 5px;
+  font-size: 1.5rem;
   display: inline-block;
-  
+  color: rgba(white, 1);
+
   #T-head {
-    font-size: 2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: rgba(black, 0.5);
+    color: rgba(white, 0.5);
     position: absolute;
     bottom: 0;
     left: 0;
-    margin-left: -30px;
+    margin-left: -15px;
     
     transform: rotate(270deg);
     transform-origin: (0 0);
@@ -27,24 +30,25 @@
 
 .food {
   $border-color: rgba(color(f-brown), 1.0);
-  width: 300px;
-  min-height: 250px;
+  width: 90px;
+  min-height: 75px;
   position: relative;
   border: 2px solid $border-color;
-  border-left: 40px solid $border-color;
-  padding: 15px;
-  font-size: 5px;
+  border-left: 20px solid $border-color;
+  padding: 5px;
+  font-size: 1.5rem;
   display: inline-block;
-  
+  color: rgba(white, 1);
+
   #Fo-head {
-    font-size: 2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: rgba(black, 0.5);
+    color: rgba(white, 0.5);
     position: absolute;
     bottom: 0;
     left: 0;
-    margin-left: -30px;
+    margin-left: -15px;
     
     transform: rotate(270deg);
     transform-origin: (0 0);
@@ -54,37 +58,81 @@
 
 .attractions {
   $border-color: rgba(color(w-red), 1.0);
-  width: 300px;
-  min-height: 250px;
+  width: 90px;
+  min-height: 75px;
   position: relative;
   border: 2px solid $border-color;
-  border-left: 40px solid $border-color;
-  padding: 15px;
-  font-size: 5px;
+  border-left: 20px solid $border-color;
+  padding: 5px;
+  font-size: 1.5rem;
   display: inline-block;
+  color: rgba(white, 1);
   
   #At-head {
-    font-size: 2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: rgba(black, 0.5);
+    color: rgba(white, 0.5);
     position: absolute;
     bottom: 0;
     left: 0;
-    margin-left: -30px;
+    margin-left: -15px;
     
     transform: rotate(270deg);
     transform-origin: (0 0);
   }
   
+  /* .attractions {
+    $border-color: rgba(color(w-red), 1.0);
+    width: 300px;
+    min-height: 250px;
+    position: relative;
+    border: 2px solid $border-color;
+    border-left: 40px solid $border-color;
+    padding: 15px;
+    font-size: 3rem;
+    display: inline-block;
+    
+    #At-head {
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: rgba(white, 0.5);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin-left: -30px;
+      
+      transform: rotate(270deg);
+      transform-origin: (0 0);
+    } */
+
 }
 
 .summary{
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   height: 100vh;
   width: auto;
-  background-color: color(#1B1B1B);
+  flex-direction: row;
+  background:#1B1B1B;
+  // background-image: url("fuku.jpg");
+
 }
 
+.summary-info{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
 
+.sum-pic{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  #pic{
+    height: 15rem;
+    width: 18rem;
+  }
+}

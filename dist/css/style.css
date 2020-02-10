@@ -81,25 +81,26 @@
 }
 
 .transport {
-  width: 300px;
-  min-height: 250px;
+  width: 90px;
+  min-height: 75px;
   position: relative;
   border: 2px solid #01374d;
-  border-left: 40px solid #01374d;
-  padding: 15px;
-  font-size: 5px;
+  border-left: 20px solid #01374d;
+  padding: 5px;
+  font-size: 1.5rem;
   display: inline-block;
+  color: white;
 }
 
 .transport #T-head {
-  font-size: 2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   position: absolute;
   bottom: 0;
   left: 0;
-  margin-left: -30px;
+  margin-left: -15px;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
   -webkit-transform-origin: 0 0;
@@ -107,25 +108,26 @@
 }
 
 .food {
-  width: 300px;
-  min-height: 250px;
+  width: 90px;
+  min-height: 75px;
   position: relative;
   border: 2px solid #993805;
-  border-left: 40px solid #993805;
-  padding: 15px;
-  font-size: 5px;
+  border-left: 20px solid #993805;
+  padding: 5px;
+  font-size: 1.5rem;
   display: inline-block;
+  color: white;
 }
 
 .food #Fo-head {
-  font-size: 2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   position: absolute;
   bottom: 0;
   left: 0;
-  margin-left: -30px;
+  margin-left: -15px;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
   -webkit-transform-origin: 0 0;
@@ -133,25 +135,50 @@
 }
 
 .attractions {
-  width: 300px;
-  min-height: 250px;
+  width: 90px;
+  min-height: 75px;
   position: relative;
   border: 2px solid #961414;
-  border-left: 40px solid #961414;
-  padding: 15px;
-  font-size: 5px;
+  border-left: 20px solid #961414;
+  padding: 5px;
+  font-size: 1.5rem;
   display: inline-block;
+  color: white;
+  /* .attractions {
+    $border-color: rgba(color(w-red), 1.0);
+    width: 300px;
+    min-height: 250px;
+    position: relative;
+    border: 2px solid $border-color;
+    border-left: 40px solid $border-color;
+    padding: 15px;
+    font-size: 3rem;
+    display: inline-block;
+    
+    #At-head {
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: rgba(white, 0.5);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin-left: -30px;
+      
+      transform: rotate(270deg);
+      transform-origin: (0 0);
+    } */
 }
 
 .attractions #At-head {
-  font-size: 2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   position: absolute;
   bottom: 0;
   left: 0;
-  margin-left: -30px;
+  margin-left: -15px;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
   -webkit-transform-origin: 0 0;
@@ -162,12 +189,48 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100vh;
+  width: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #1B1B1B;
+}
+
+.summary-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
-  width: auto;
+}
+
+.sum-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+}
+
+.sum-pic #pic {
+  height: 15rem;
+  width: 18rem;
 }
 
 html {
@@ -176,5 +239,9 @@ html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  background: #1B1B1B;
 }
 /*# sourceMappingURL=style.css.map */
