@@ -18,11 +18,15 @@
       padding: 15px;
       font-size: 3rem;
     }
-
+    @include desktop{
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
   #T-head {
     font-size: 1rem;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: rgba(white, 0.5);
     position: absolute;
     bottom: 0;
@@ -57,11 +61,15 @@
       padding: 15px;
       font-size: 3rem;
     }
-
+    @include desktop{
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
   #Fo-head {
     font-size: 1rem;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: rgba(white, 0.5);
     position: absolute;
     bottom: 0;
@@ -96,11 +104,16 @@
       padding: 15px;
       font-size: 3rem;
     }
+    @include desktop{
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
 
   #At-head {
     font-size: 1rem;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: rgba(white, 0.5);
     position: absolute;
     bottom: 0;
@@ -170,7 +183,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 60%;
+  width: 50%;
     @include tablet{
       height: 60%;
       flex-direction: row;
@@ -195,6 +208,9 @@
     @include laptop{
       height: 20rem;
     }
+     @include desktop{
+      height: 25rem;
+    } 
 }
 
 .ramen{
@@ -202,6 +218,9 @@
   top: 2rem;
   left: 4rem;
   }
+/*   @include desktop{
+    left: 32rem;
+  } */
 }
 .air{
   @include tablet{
@@ -209,8 +228,11 @@
   right: -6rem;
   }
   @include laptop{
-    right: 4rem;
+    right: -16rem;
   }
+/*   @include desktop{
+    right: 5rem;
+  } */
 }
 .park{
   @include tablet{
@@ -218,6 +240,6 @@
   right: -27rem;
   }
   @include laptop{
-    right: -34rem;
+    right: -53.5rem;
   }
 }

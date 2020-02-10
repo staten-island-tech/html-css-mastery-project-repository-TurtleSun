@@ -102,10 +102,25 @@
   }
 }
 
+@media (min-width: 1300px) {
+  .transport {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .transport #T-head {
   font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: rgba(255, 255, 255, 0.5);
   position: absolute;
   bottom: 0;
@@ -147,10 +162,25 @@
   }
 }
 
+@media (min-width: 1300px) {
+  .food {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .food #Fo-head {
   font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: rgba(255, 255, 255, 0.5);
   position: absolute;
   bottom: 0;
@@ -216,10 +246,25 @@
   }
 }
 
+@media (min-width: 1300px) {
+  .attractions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .attractions #At-head {
   font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: rgba(255, 255, 255, 0.5);
   position: absolute;
   bottom: 0;
@@ -301,7 +346,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 60%;
+  width: 50%;
 }
 
 @media (min-width: 600px) {
@@ -345,11 +390,29 @@
   }
 }
 
+@media (min-width: 1300px) {
+  .pic {
+    height: 25rem;
+  }
+}
+
+.ramen {
+  /*   @include desktop{
+    left: 32rem;
+  } */
+}
+
 @media (min-width: 600px) {
   .ramen {
     top: 2rem;
     left: 4rem;
   }
+}
+
+.air {
+  /*   @include desktop{
+    right: 5rem;
+  } */
 }
 
 @media (min-width: 600px) {
@@ -361,7 +424,7 @@
 
 @media (min-width: 900px) {
   .air {
-    right: 4rem;
+    right: -16rem;
   }
 }
 
@@ -374,7 +437,7 @@
 
 @media (min-width: 900px) {
   .park {
-    right: -34rem;
+    right: -53.5rem;
   }
 }
 
