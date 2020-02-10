@@ -176,6 +176,11 @@
       flex-direction: row;
       position: relative;
     }
+    @include laptop{
+      height: 65%;
+      justify-content: space-evenly;
+      margin: 5rem;
+    }
 }
 
 .pic{
@@ -187,19 +192,32 @@
       position: absolute;
       outline-offset: .5rem;
     }
+    @include laptop{
+      height: 20rem;
+    }
 }
 
-@include tablet{
 .ramen{
+  @include tablet{
   top: 2rem;
   left: 4rem;
+  }
 }
 .air{
+  @include tablet{
   top: 20rem;
   right: -6rem;
+  }
+  @include laptop{
+    right: 4rem;
+  }
 }
 .park{
+  @include tablet{
   top: 38rem;
   right: -27rem;
-}
+  }
+  @include laptop{
+    right: -34rem;
+  }
 }
