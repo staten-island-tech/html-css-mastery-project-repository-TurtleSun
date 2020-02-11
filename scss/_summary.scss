@@ -18,7 +18,7 @@
       padding: 15px;
       font-size: 3rem;
     }
-    @include desktop{
+    @include laptop{
       display: flex;
       justify-content: space-evenly;
       flex-direction: column;
@@ -61,7 +61,7 @@
       padding: 15px;
       font-size: 3rem;
     }
-    @include desktop{
+    @include laptop{
       display: flex;
       justify-content: space-evenly;
       flex-direction: column;
@@ -104,7 +104,7 @@
       padding: 15px;
       font-size: 3rem;
     }
-    @include desktop{
+    @include laptop{
       display: flex;
       justify-content: space-evenly;
       flex-direction: column;
@@ -218,6 +218,9 @@
   top: 2rem;
   left: 4rem;
   }
+  @include laptop{
+    left: 0rem;
+  }
 /*   @include desktop{
     left: 32rem;
   } */
@@ -228,7 +231,7 @@
   right: -6rem;
   }
   @include laptop{
-    right: -16rem;
+    right: -10rem;
   }
 /*   @include desktop{
     right: 5rem;
@@ -241,5 +244,8 @@
   }
   @include laptop{
     right: -53.5rem;
+  }
+  @include desktop{
+    right: -82rem;
   }
 }

@@ -102,7 +102,7 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 900px) {
   .transport {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -162,7 +162,7 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 900px) {
   .food {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -246,7 +246,7 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 900px) {
   .attractions {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -409,6 +409,12 @@
   }
 }
 
+@media (min-width: 900px) {
+  .ramen {
+    left: 0rem;
+  }
+}
+
 .air {
   /*   @include desktop{
     right: 5rem;
@@ -424,7 +430,7 @@
 
 @media (min-width: 900px) {
   .air {
-    right: -16rem;
+    right: -10rem;
   }
 }
 
@@ -438,6 +444,12 @@
 @media (min-width: 900px) {
   .park {
     right: -53.5rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .park {
+    right: -82rem;
   }
 }
 
