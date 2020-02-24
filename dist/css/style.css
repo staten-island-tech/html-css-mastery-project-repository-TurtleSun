@@ -461,7 +461,7 @@
 
 .a-text {
   text-align: center;
-  padding: 32px;
+  padding: 6rem;
 }
 
 .a-pic {
@@ -479,9 +479,9 @@
 
 /* Create four equal columns that sits next to each other */
 .column {
-  -webkit-box-flex: 25%;
-      -ms-flex: 25%;
-          flex: 25%;
+  -webkit-box-flex: 24%;
+      -ms-flex: 24%;
+          flex: 24%;
   max-width: 25%;
   padding: 0 4px;
 }
@@ -508,7 +508,7 @@
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
-    max-width: 100%;
+    max-width: 105%;
   }
 }
 

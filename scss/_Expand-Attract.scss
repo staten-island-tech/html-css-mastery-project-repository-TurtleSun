@@ -8,7 +8,7 @@
 
 .a-text{
     text-align: center;
-    padding: 32px;
+    padding: 6rem;
 }
 
 .a-pic{
@@ -23,7 +23,7 @@
   
   /* Create four equal columns that sits next to each other */
   .column {
-    flex: 25%;
+    flex: 24%;
     max-width: 25%;
     padding: 0 4px;
   }
@@ -46,6 +46,6 @@
   @media screen and (max-width: 600px) {
     .column {
       flex: 100%;
-      max-width: 100%;
+      max-width: 105%;
     }
   }
