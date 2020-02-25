@@ -291,7 +291,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 100vh;
+  height: 80rem;
   width: auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -459,9 +459,25 @@
           box-sizing: border-box;
 }
 
+/* .a-text{
+    text-align: center;
+    padding: 4rem;
+    font-size: 3rem;
+    color: lighten($color: #ffcba4, $amount: .5);
+}
+ */
 .a-text {
   text-align: center;
-  padding: 6rem;
+  padding: 2rem;
+  font-size: 1.6rem;
+  color: #ffcca7;
+}
+
+@media (min-width: 900px) {
+  .a-text {
+    padding: 4rem;
+    font-size: 3rem;
+  }
 }
 
 .a-pic {

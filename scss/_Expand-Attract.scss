@@ -6,10 +6,22 @@
     box-sizing: border-box;
 }
 
-.a-text{
+/* .a-text{
     text-align: center;
-    padding: 6rem;
+    padding: 4rem;
+    font-size: 3rem;
     color: lighten($color: #ffcba4, $amount: .5);
+}
+ */
+ .a-text{
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.6rem;
+  color: lighten($color: #ffcba4, $amount: .5);
+  @include laptop{
+    padding: 4rem;
+    font-size: 3rem;
+  }
 }
 
 .a-pic{
