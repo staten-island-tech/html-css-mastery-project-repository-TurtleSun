@@ -484,6 +484,16 @@
   width: 100%;
 }
 
+#Extra-APictures {
+  opacity: 0;
+}
+
+@media (min-width: 900px) {
+  #Extra-APictures {
+    opacity: 1;
+  }
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -524,6 +534,12 @@
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
+    max-width: 47%;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 900px) {
+  .column {
     max-width: 105%;
   }
 }

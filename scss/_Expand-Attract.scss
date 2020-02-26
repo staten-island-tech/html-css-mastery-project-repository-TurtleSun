@@ -26,6 +26,13 @@
 
 .a-pic{
     width: 100%;
+  }
+
+#Extra-APictures{
+  opacity: 0;
+  @include laptop{
+    opacity: 1;
+  }
 }
 
 .row {
@@ -59,6 +66,10 @@
   @media screen and (max-width: 600px) {
     .column {
       flex: 100%;
-      max-width: 105%;
+      max-width: 47%;
+      @include laptop{
+        max-width: 105%;
+      }
+
     }
   }
