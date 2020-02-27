@@ -1,1 +1,12 @@
 @import "_variables.scss";
+
+.Expand-Food {
+    position: relative;
+    height: 100vh;
+  
+    // background-color: rgba(color(primary), 1);
+    background-image: url("Wood Jap Arch.jpg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}

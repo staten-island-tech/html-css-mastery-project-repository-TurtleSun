@@ -17,10 +17,14 @@
   text-align: center;
   padding: 2rem;
   font-size: 1.6rem;
+
   color: lighten($color: #ffcba4, $amount: .5);
+  @include tablet{
+    font-size: 2rem;
+  }
   @include laptop{
     padding: 4rem;
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
@@ -29,6 +33,12 @@
   }
 
 #Extra-APictures{
+  opacity: 0;
+  @include tablet{
+    opacity: 1;
+  }
+}
+#SAPicture{
   opacity: 0;
   @include laptop{
     opacity: 1;
@@ -46,7 +56,10 @@
     flex: 24%;
     max-width: 25%;
     padding: 0 4px;
+    @include laptop
+    max-width: 105%;
   }
+  
   
   .column img {
     margin-top: 8px;
@@ -55,21 +68,17 @@
   }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
+   @media screen and (max-width: 800px) {
     .column {
       flex: 50%;
-      max-width: 50%;
+      max-width: 32%;
     }
-  }
+  } 
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .column {
       flex: 100%;
       max-width: 47%;
-      @include laptop{
-        max-width: 105%;
-      }
-
     }
   }
