@@ -5,8 +5,16 @@
     height: 100vh;
   
     // background-color: rgba(color(primary), 1);
-    background-image: url("Wood Jap Arch.jpg");
+    background-image: url("Fuku Park.jpg");
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
+    filter: grayscale(45%);
+}
+
+.text{
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    color:  #1B1B1B;
 }
