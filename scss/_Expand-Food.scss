@@ -12,9 +12,33 @@
     filter: grayscale(45%);
 }
 
-.text{
+#Food-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: auto;
+}
+
+.haikus{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #1B1B1B;
+    opacity: .5;
+    height: 70vh;
+    width: 55vw;
+}
+
+.Haiku-head{
     text-align: center;
-    padding: 2rem;
     font-size: 2rem;
-    color:  #1B1B1B;
+    color: whitesmoke;
+
+}
+
+.Haiku-text{
+    text-align: center;
+    font-size: 1.5rem;
+    color: whitesmoke;
 }

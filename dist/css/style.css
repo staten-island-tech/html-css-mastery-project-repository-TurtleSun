@@ -568,11 +568,47 @@
           filter: grayscale(45%);
 }
 
-.text {
+#Food-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: auto;
+}
+
+.haikus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #1B1B1B;
+  opacity: .5;
+  height: 70vh;
+  width: 55vw;
+}
+
+.Haiku-head {
   text-align: center;
-  padding: 2rem;
   font-size: 2rem;
-  color: #1B1B1B;
+  color: whitesmoke;
+}
+
+.Haiku-text {
+  text-align: center;
+  font-size: 1.5rem;
+  color: whitesmoke;
 }
 
 html {
