@@ -5,6 +5,10 @@
     // font
     box-sizing: border-box;
     height: 100vh;
+    @include laptop{
+      height: 170rem;
+    }
+
 }
 
 /* .a-text{

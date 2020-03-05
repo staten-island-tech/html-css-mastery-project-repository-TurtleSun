@@ -461,6 +461,12 @@
   height: 100vh;
 }
 
+@media (min-width: 900px) {
+  .Expand-Attract {
+    height: 170rem;
+  }
+}
+
 /* .a-text{
     text-align: center;
     padding: 4rem;
@@ -559,7 +565,7 @@
 
 .Expand-Food {
   position: relative;
-  height: 100vh;
+  height: 100rem;
   background-image: url("Fuku Park.jpg");
   background-position: top;
   background-size: cover;
@@ -578,7 +584,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
   width: auto;
 }
 
@@ -594,9 +599,16 @@
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #1B1B1B;
-  opacity: .5;
+  opacity: .7;
   height: 70vh;
   width: 55vw;
+}
+
+@media (min-width: 900px) {
+  .haikus {
+    height: 85vh;
+    width: 70vw;
+  }
 }
 
 .Haiku-head {
@@ -605,10 +617,22 @@
   color: whitesmoke;
 }
 
+@media (min-width: 900px) {
+  .Haiku-head {
+    font-size: 4rem;
+  }
+}
+
 .Haiku-text {
   text-align: center;
   font-size: 1.5rem;
   color: whitesmoke;
+}
+
+@media (min-width: 900px) {
+  .Haiku-text {
+    font-size: 3rem;
+  }
 }
 
 html {
