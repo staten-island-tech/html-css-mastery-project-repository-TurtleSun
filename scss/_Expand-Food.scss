@@ -21,16 +21,20 @@
 
 .haikus{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
     background-color: #1B1B1B;
     opacity: .7;
     height: 70vh;
     width: 55vw;
     @include laptop{
-        height: 85vh;
+        height: 50vh;
         width: 70vw;
+        flex-direction: row;
     }
+}
+
+.hi{
 }
 
 .Haiku-head{
@@ -38,16 +42,17 @@
     font-size: 2rem;
     color: whitesmoke;
     @include laptop{
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
 }
 
 .Haiku-text{
-    text-align: center;
+
     font-size: 1.5rem;
     color: whitesmoke;
     @include laptop{
-        font-size: 3rem;
+        align-items: center;
+        font-size: 3.5rem;
     }
 }

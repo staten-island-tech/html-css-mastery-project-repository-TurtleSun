@@ -61,7 +61,7 @@
     flex: 24%;
     max-width: 25%;
     padding: 0 4px;
-    @include laptop
+    @include laptop {
     max-width: 105%;
   }
   
@@ -86,4 +86,4 @@
       flex: 100%;
       max-width: 47%;
     }
-  }
+}
