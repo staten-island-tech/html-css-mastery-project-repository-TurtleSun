@@ -534,33 +534,24 @@
           flex: 24%;
   max-width: 25%;
   padding: 0 4px;
-  max-width: 105%;
 }
 
-.column img {
+@media (min-width: 600px) {
+  .column {
+    max-width: 33%;
+  }
+}
+
+@media (min-width: 900px) {
+  .column {
+    max-width: 105%;
+  }
+}
+
+.column .column img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
-    max-width: 32%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 47%;
-  }
 }
 
 .Expand-Food {
@@ -591,9 +582,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -604,9 +595,16 @@
   width: 55vw;
 }
 
+@media (min-width: 600px) {
+  .haikus {
+    height: 55vh;
+    width: 40vw;
+  }
+}
+
 @media (min-width: 900px) {
   .haikus {
-    height: 85vh;
+    height: 50vh;
     width: 70vw;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -623,19 +621,21 @@
 
 @media (min-width: 900px) {
   .Haiku-head {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 
 .Haiku-text {
-  text-align: center;
   font-size: 1.5rem;
   color: whitesmoke;
 }
 
 @media (min-width: 900px) {
   .Haiku-text {
-    font-size: 3rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 3.5rem;
   }
 }
 

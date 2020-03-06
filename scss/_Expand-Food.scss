@@ -27,6 +27,10 @@
     opacity: .7;
     height: 70vh;
     width: 55vw;
+    @include tablet{
+        height: 55vh;
+        width: 40vw;
+    }
     @include laptop{
         height: 50vh;
         width: 70vw;
@@ -48,7 +52,6 @@
 }
 
 .Haiku-text{
-
     font-size: 1.5rem;
     color: whitesmoke;
     @include laptop{
