@@ -38,13 +38,17 @@
     }
 }
 
-// .hi{
-// }
+.hi{
+    margin: 5rem;
+}
 
 .Haiku-head{
     text-align: center;
     font-size: 2rem;
     color: whitesmoke;
+    @include tablet{
+        font-size: 3.5rem;
+    }
     @include laptop{
         font-size: 5rem;
     }
@@ -52,8 +56,12 @@
 }
 
 .Haiku-text{
+    text-align: center;
     font-size: 1.5rem;
     color: whitesmoke;
+    @include tablet{
+        font-size: 2rem;
+    }
     @include laptop{
         align-items: center;
         font-size: 3.5rem;
