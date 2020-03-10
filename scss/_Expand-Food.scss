@@ -28,8 +28,8 @@
     height: 70vh;
     width: 55vw;
     @include tablet{
-        height: 55vh;
-        width: 40vw;
+        height: 65vh;
+        width: 45vw;
     }
     @include laptop{
         height: 50vh;
@@ -39,7 +39,8 @@
 }
 
 .hi{
-    margin: 5rem;
+    margin: 3rem;
+    font-family: 'Indie Flower', cursive;
 }
 
 .Haiku-head{
@@ -47,7 +48,7 @@
     font-size: 2rem;
     color: whitesmoke;
     @include tablet{
-        font-size: 3.5rem;
+        font-size: 2.8rem;
     }
     @include laptop{
         font-size: 5rem;
