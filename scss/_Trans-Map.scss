@@ -1,7 +1,14 @@
 @import "_variables.scss";
 
+.Trans-Map{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
 a.lightbox img {
-    height: 150px;
+    height: 250px;
     border: 3px solid rgba(color(e-black), 1.0);
     box-shadow: 0px 0px 8px rgba(0,0,0,.3);
     margin: 94px 20px 20px 20px;
@@ -9,7 +16,7 @@ a.lightbox img {
     
     /* Styles the lightbox, removes it from sight and adds the fade-in transition */
     
-    .lightbox-target {
+    .lightbox-before {
     position: fixed;
     top: -100%;
     width: 100%;
@@ -22,7 +29,7 @@ a.lightbox img {
     
     /* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
     
-    .lightbox-target img {
+    .lightbox-before img {
     margin: auto;
     position: absolute;
     top: 0;
@@ -83,18 +90,18 @@ a.lightbox img {
     
     /* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
     
-    .lightbox-target:target {
+    .lightbox-before:target {
     opacity: 1;
     top: 0;
     bottom: 0;
     }
     
-    .lightbox-target:target img {
+    .lightbox-before:target img {
     max-height: 100%;
     max-width: 100%;
     }
     
-    .lightbox-target:target a.lightbox-close {
+    .lightbox-before:target a.lightbox-close {
     top: 0px;
     }
     
