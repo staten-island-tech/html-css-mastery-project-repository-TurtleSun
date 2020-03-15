@@ -6,7 +6,9 @@
     box-sizing: border-box;
     height: 100vh;
     @include laptop{
-      height: 170rem;
+      width: 100%;
+      height: auto;
+      margin-bottom: 5rem;
     }
 
 }
@@ -58,13 +60,14 @@
   
   /* Create four equal columns that sits next to each other */
   .column {
-    flex: 24%;
-    max-width: 25%;
+    flex: 47%;
+    max-width: 100%;
     padding: 0 4px;
     @include tablet{
-      max-width: 33%;
+      max-width: 32%;
     }
     @include laptop {
+      flex: 24%;
       max-width: 105%;
     }
   

@@ -1,9 +1,8 @@
 @import "_variables.scss";
 
 .Expand-Food {
-    position: relative;
-    height: 100rem;
-  
+    height: 100vh;
+    margin-bottom: 10rem;
     // background-color: rgba(color(primary), 1);
     background-image: url("Fuku Park.jpg");
     background-position: top;
@@ -16,7 +15,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: auto;
 }
 
 .haikus{
@@ -25,7 +23,7 @@
     flex-direction: column;
     background-color: #1B1B1B;
     opacity: .7;
-    height: 70vh;
+    height: 75vh;
     width: 55vw;
     @include tablet{
         height: 65vh;
@@ -36,10 +34,15 @@
         width: 70vw;
         flex-direction: row;
     }
+    @include desktop{
+        height: 80vh;
+        width: 75vw;
+        flex-direction: row;
+    }
 }
 
 .hi{
-    margin: 3rem;
+    margin: 2rem;
     font-family: 'Indie Flower', cursive;
 }
 
@@ -53,6 +56,9 @@
     @include laptop{
         font-size: 5rem;
     }
+    @include desktop{
+        font-size: 5.2rem;
+    }
 
 }
 
@@ -64,7 +70,6 @@
         font-size: 2rem;
     }
     @include laptop{
-        align-items: center;
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 }
