@@ -1,14 +1,12 @@
 
-@import "_variables.scss";
-
 a{
     text-decoration: none;
     color: whitesmoke;
 }
 
-/* body{
+/*  body{
     overflow: hidden;
-} */
+}  */
 
 header{
     width: 100%;
@@ -21,45 +19,51 @@ header{
 }
 
 nav{
-    padding-top: 2rem;
+    padding-top: .5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    font-size: .5rem;
     @include tablet{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         text-transform: uppercase;
         font-size: 1.5rem;
+        padding-top: 2rem;
         padding-left: 3rem;
         padding-right: 3rem;
     }
 }
 
 .brand{
-    font-size: 5rem;
+    font-size: 2rem;
     font-weight: 300;
     transform: translateX(-100rem);
     animation: slideIn .5s forwards;
     @include tablet{
         font-size: 3rem;
     }
+    @include laptop{
+        font-size: 5rem;
+    }
 }
 .brand span{
-    font-size: 2rem;
+    font-size: 1rem;
     color: #E94B3CFF;
-    @include tablet{
-        font-size: 1rem;
+    @include laptop{
+        font-size: 2rem;
     }
 }
 
 nav ul{
     display: flex;
-    width: 100%;
+    justify-content: flex-start;
     @include tablet{
+        width: 100%;
+    }
+    @include laptop{
         justify-content: flex-end;
     }
 }
@@ -89,8 +93,9 @@ nav ul li:nth-child(5){
 nav ul li a{
     padding: 1rem 0;
     margin: 0 3rem ;
+    letter-spacing: 1px;
     position: relative;
-    @include tablet{
+    @include laptop{
         letter-spacing: 2px;
     }
 }
