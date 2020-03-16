@@ -331,6 +331,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50%;
+  position: relative;
 }
 
 @media (min-width: 600px) {
@@ -341,7 +342,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    position: relative;
   }
 }
 
@@ -379,6 +379,7 @@
 
 .ramen {
   position: absolute;
+  top: 9.5rem;
 }
 
 @media (min-width: 600px) {
@@ -388,12 +389,12 @@
   }
 }
 
-.air {
+/* .air{
   position: relative;
-}
-
+} */
 .park {
   position: absolute;
+  bottom: 9.5rem;
 }
 
 @media (min-width: 600px) {
@@ -713,6 +714,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
+  font-size: .5rem;
 }
 
 @media (min-width: 600px) {
@@ -893,7 +895,7 @@ nav ul li a:hover::after {
 html {
   margin: 0;
   padding: 0;
-  font-size: 6px;
+  font-size: 62.5%;
   font-family: 'Baloo Chettan 2', cursive;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

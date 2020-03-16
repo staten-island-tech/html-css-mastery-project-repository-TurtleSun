@@ -163,11 +163,11 @@
   align-items: center;
   flex-direction: column;
   width: 50%;
+  position: relative;
     @include tablet{
       height: 60%;
       width: 100%;
       flex-direction: row;
-      position: relative;
     }
     @include laptop{
       height: 65%;
@@ -193,16 +193,18 @@
 
 .ramen{
   position: absolute;
+  top: 9.5rem;
   @include tablet{
     left: 5rem;
     top: 5rem;
   }
 }
-.air{
+/* .air{
   position: relative;
-}
+} */
 .park{
   position: absolute;
+  bottom: 9.5rem;
   @include tablet{
     right: 5rem;
     bottom: 5rem;
