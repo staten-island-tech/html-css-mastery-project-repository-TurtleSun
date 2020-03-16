@@ -2,24 +2,12 @@
 
 .Expand-Attract{
     margin: 0;
-    // font
     box-sizing: border-box;
-    height: 100vh;
-    @include laptop{
-      width: 100%;
-      height: auto;
-      margin-bottom: 5rem;
-    }
-
+    height: auto;
+    margin-bottom: 10rem;
+    width: 100%;
 }
 
-/* .a-text{
-    text-align: center;
-    padding: 4rem;
-    font-size: 3rem;
-    color: lighten($color: #ffcba4, $amount: .5);
-}
- */
  .a-text{
   text-align: center;
   padding: 2rem;
@@ -58,7 +46,6 @@
     padding: 0 4px;
   }
   
-  /* Create four equal columns that sits next to each other */
   .column {
     flex: 47%;
     max-width: 100%;

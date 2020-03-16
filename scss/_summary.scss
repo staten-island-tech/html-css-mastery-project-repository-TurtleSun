@@ -127,32 +127,6 @@
     transform: rotate(270deg);
     transform-origin: (0 0);
   }
-  
-  /* .attractions {
-    $border-color: rgba(color(w-red), 1.0);
-    width: 300px;
-    min-height: 250px;
-    position: relative;
-    border: 2px solid $border-color;
-    border-left: 40px solid $border-color;
-    padding: 15px;
-    font-size: 3rem;
-    display: inline-block;
-    
-    #At-head {
-      font-size: 2rem;
-      text-transform: uppercase;
-      letter-spacing: 5px;
-      color: rgba(white, 0.5);
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      margin-left: -30px;
-      
-      transform: rotate(270deg);
-      transform-origin: (0 0);
-    } */
-
 }
 
 .summary{
@@ -162,7 +136,6 @@
   width: auto;
   flex-direction: row;
   background:#1B1B1B;
-  // background-image: url("fuku.jpg");
     @include tablet{
       flex-direction: column;
       margin-top: 10rem;
@@ -187,17 +160,17 @@
 .sum-pic{
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 50%;
     @include tablet{
       height: 60%;
+      width: 100%;
       flex-direction: row;
       position: relative;
     }
     @include laptop{
       height: 65%;
-      justify-content: space-evenly;
-      margin: 5rem;
     }
 }
 
@@ -219,38 +192,21 @@
 }
 
 .ramen{
+  position: absolute;
   @include tablet{
-  top: 2rem;
-  left: 4rem;
+    left: 5rem;
+    top: 5rem;
   }
-  @include laptop{
-    left: 0rem;
-  }
-/*   @include desktop{
-    left: 32rem;
-  } */
 }
 .air{
-  @include tablet{
-  top: 20rem;
-  right: -6rem;
-  }
-  @include laptop{
-    right: -10rem;
-  }
-/*   @include desktop{
-    right: 5rem;
-  } */
+  position: relative;
 }
 .park{
+  position: absolute;
   @include tablet{
-  top: 38rem;
-  right: -27rem;
-  }
-  @include laptop{
-    right: -53.5rem;
-  }
-  @include desktop{
-    right: -82rem;
+    right: 5rem;
+    bottom: 5rem;
   }
 }
+
+

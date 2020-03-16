@@ -1,9 +1,8 @@
 @import "_variables.scss";
 
 .Expand-Food {
-    height: 100vh;
-    margin-bottom: 10rem;
-    // background-color: rgba(color(primary), 1);
+    height: 100rem;
+    width: 100%;
     background-image: url("Fuku Park.jpg");
     background-position: top;
     background-size: cover;
@@ -35,7 +34,7 @@
         flex-direction: row;
     }
     @include desktop{
-        height: 80vh;
+        height: 120vh;
         width: 75vw;
         flex-direction: row;
     }
@@ -57,7 +56,7 @@
         font-size: 5rem;
     }
     @include desktop{
-        font-size: 5.2rem;
+        font-size: 5.5rem;
     }
 
 }
