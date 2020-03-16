@@ -3,9 +3,12 @@
 .Expand-Attract{
     margin: 0;
     box-sizing: border-box;
-    height: auto;
-    margin-bottom: 10rem;
     width: 100%;
+    height: 115vh;
+    @include laptop{
+    height: auto;
+    margin-bottom: 5rem;
+    }
 }
 
  .a-text{
